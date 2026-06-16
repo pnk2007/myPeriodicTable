@@ -22,7 +22,6 @@
 }
 
 .element {
-    background-color: #333;
     width: var(--tile-width);
     height: var(--tile-height);
     padding: 10px 5px;
@@ -70,6 +69,9 @@
     justify-content: space-between;
 }
 
+.metal {
+    background-color: #333;
+}
 .nonmetal { background-color: #2b5c8f; }
 .noble-gas { background-color: #613659; }
 .alkali-metal { background-color: #a04040; }
@@ -80,4 +82,12 @@
 }
 .halogen {
     background-color: darkcyan;
+}
+
+.lantanides {
+    background-color: darkred;
+}
+
+.actinides {
+    background-color: darkgreen;
 }
