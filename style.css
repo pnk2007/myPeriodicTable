@@ -1,19 +1,19 @@
 :root {
-    --tile-width: 50px;
-    --tile-height: 50px;
+    --tile-width: 60px;
+    --tile-height: 75px;
 }
 
 #the-header {
     color: whitesmoke;
     font-family: Arial, sans-serif;
-    font-size: 30px;
-    padding: 30px;
+    font-size: 20px;
     text-align: center;
 }
 
 .periodic-table {
     display: flex;
     width: max-content;
+    height: max-content;
     margin: 0px auto;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +24,6 @@
 .element {
     width: var(--tile-width);
     height: var(--tile-height);
-    padding: 10px 5px;
     margin: 5px;
     text-align: center;
     border-radius: 4px;
@@ -34,33 +33,56 @@
 }
 
 .element:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
     z-index: 10;
     box-shadow: 0 5px 15px rgba(255,255,255,0.2);
 }
 
 .atomic-number {
-    font-size: 11px;
+    margin: 3px 0px 0px 3px;
+    font-size: 11px; 
     text-align: left;
     color: #aaa;
 }
+
+.average-atomic-mass {
+    font-size: 10px;
+    margin-top: 3px;
+    text-align: center;
+    color: #aaa;
+}
+
 .chemical-symbol {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    color: #aaa;
+    margin: 5px 0px;
 }
 .name {
     font-size: 9px;
     overflow: hidden;
+    margin: 2px 0px;
     text-overflow: ellipsis;
     text-align: bottom;
     white-space: nowrap;
+    color: #aaa;
 }
 
 .first-period, .second-period, .third-period, .fourth-period, .fifth-period, .sixth-period, .seventh-period {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.seventh-period-lantanides, .seventh-period-actinides {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.seventh-period-lantanides {
+    margin-top: 10px;
 }
 
 .sp_cluster1, .sp_cluster2, .tp_cluster1, .tp_cluster2, .fp_cluster1, .fp_cluster2, .fp_cluster3 {
