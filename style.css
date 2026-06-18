@@ -75,14 +75,17 @@
     justify-content: space-between;
 }
 
-.seventh-period-lantanides, .seventh-period-actinides {
+.seventh-period-lantanides {
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
     justify-content: end;
 }
 
-.seventh-period-lantanides {
-    margin-top: 10px;
+.seventh-period-actinides {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 .sp_cluster1, .sp_cluster2, .tp_cluster1, .tp_cluster2, .fp_cluster1, .fp_cluster2, .fp_cluster3 {
