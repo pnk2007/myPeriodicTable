@@ -69,6 +69,36 @@
     color: #aaa;
 }
 
+.zeroth-period {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-text {
+    display: flex;
+    color: white;
+    width: var(--tile-width);
+    font-family: 'Times New Roman', Times, serif;
+    height: var(--tile-height);
+    align-items: flex-end;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+}
+
+.period-text {
+    display: flex;
+    color: white;
+    width: var(--tile-width);
+    font-family: 'Times New Roman', Times, serif;
+    height: var(--tile-height);
+    align-items: center;
+    justify-content: start;
+    margin: 5px;
+    text-align: center;
+}
+
 .first-period, .second-period, .third-period, .fourth-period, .fifth-period, .sixth-period, .seventh-period {
     display: flex;
     flex-direction: row;
@@ -88,7 +118,10 @@
     justify-content: end;
 }
 
-.sp_cluster1, .sp_cluster2, .tp_cluster1, .tp_cluster2, .fp_cluster1, .fp_cluster2, .fp_cluster3 {
+
+/* , .fip_cluster, .sp_cluster, .tp_cluster1, .tp_cluster2, .fp_cluster1, .fp_cluster2, .fp_cluster3 */
+
+.cluster {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
