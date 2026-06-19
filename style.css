@@ -1,5 +1,5 @@
 :root {
-    --tile-width: 60px;
+    --tile-width: 65px;
     --tile-height: 75px;
 }
 
@@ -17,19 +17,44 @@
     margin: 0px auto;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    justify-content: space-between;
     background-color: #1a1a1a;
 }
 
 .element {
+    display: flex;
+    flex-direction: column;
     width: var(--tile-width);
     height: var(--tile-height);
-    margin: 5px;
+    margin: 2px;
     text-align: center;
     border-radius: 4px;
     /* box-shadow: 0 2px 5px rgba(0,0,0,0.3); */
     transition: transform 0.2s;
     cursor: pointer;
+}
+
+.header-text {
+    display: flex;
+    color: white;
+    width: var(--tile-width);
+    font-family: 'Times New Roman', Times, serif;
+    height: var(--tile-height);
+    align-items: flex-end;
+    justify-content: center;
+    margin: 2px;
+    text-align: center;
+}
+
+.period-text {
+    display: flex;
+    color: white;
+    width: var(--tile-width);
+    font-family: 'Times New Roman', Times, serif;
+    height: var(--tile-height);
+    align-items: center;
+    justify-content: start;
+    margin: 2px;
+    text-align: center;
 }
 
 .element:hover {
@@ -75,30 +100,6 @@
     justify-content: space-between;
 }
 
-.header-text {
-    display: flex;
-    color: white;
-    width: var(--tile-width);
-    font-family: 'Times New Roman', Times, serif;
-    height: var(--tile-height);
-    align-items: flex-end;
-    justify-content: center;
-    margin: 5px;
-    text-align: center;
-}
-
-.period-text {
-    display: flex;
-    color: white;
-    width: var(--tile-width);
-    font-family: 'Times New Roman', Times, serif;
-    height: var(--tile-height);
-    align-items: center;
-    justify-content: start;
-    margin: 5px;
-    text-align: center;
-}
-
 .first-period, .second-period, .third-period, .fourth-period, .fifth-period, .sixth-period, .seventh-period {
     display: flex;
     flex-direction: row;
@@ -108,7 +109,7 @@
 .seventh-period-lantanides {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 5px;
     justify-content: end;
 }
 
