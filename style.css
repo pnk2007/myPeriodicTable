@@ -1,12 +1,13 @@
 :root {
     --tile-width: 65px;
     --tile-height: 75px;
+    --distance: 5px;
 }
 
 #the-header {
     color: whitesmoke;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -25,12 +26,21 @@
     flex-direction: column;
     width: var(--tile-width);
     height: var(--tile-height);
-    margin: 2px;
+    margin: var(--distance);
     text-align: center;
     border-radius: 4px;
-    /* box-shadow: 0 2px 5px rgba(0,0,0,0.3); */
-    transition: transform 0.2s;
+    /* box-shadow: 0 0 15px rgba(0,0,0,0.9); */
+    transition: all .3s ease;
+}
+
+.element:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 15px rgba(255,255,255,0.4);
     cursor: pointer;
+}
+
+.element:active {
+    transform: scale(2.4);
 }
 
 .header-text {
@@ -41,7 +51,7 @@
     height: var(--tile-height);
     align-items: flex-end;
     justify-content: center;
-    margin: 2px;
+    margin: var(--distance);
     text-align: center;
 }
 
@@ -53,35 +63,29 @@
     height: var(--tile-height);
     align-items: center;
     justify-content: start;
-    margin: 2px;
+    margin: 5px;
     text-align: center;
-}
-
-.element:hover {
-    transform: scale(1.3);
-    z-index: 10;
-    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
 }
 
 .atomic-number {
     margin: 3px 0px 0px 3px;
     font-size: 11px; 
     text-align: left;
-    color: #aaa;
+    color: white;
 }
 
 .average-atomic-mass {
     font-size: 10px;
     margin-top: 3px;
     text-align: center;
-    color: #aaa;
+    color: white;
 }
 
 .chemical-symbol {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    color: #aaa;
+    color: white;
     margin: 5px 0px;
 }
 .name {
@@ -91,12 +95,13 @@
     text-overflow: ellipsis;
     text-align: bottom;
     white-space: nowrap;
-    color: #aaa;
+    color: white;
 }
 
 .zeroth-period {
     display: flex;
     flex-direction: row;
+    margin-top: -30px;
     justify-content: space-between;
 }
 
